@@ -1,5 +1,5 @@
 <?php
-
+include '../libs/pdo.php';
 
 
 function donneArmeByIdV1($id) {
