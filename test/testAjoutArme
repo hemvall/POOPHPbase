@@ -1,0 +1,16 @@
+<?php
+require_once '../mesClasses/Arme.php';
+require_once '../modeles/ArmeBDDg.php';
+
+$arme = new Arme();
+// aa
+$arme->setNom("Épée");
+echo "Nom de l'arme : " . $arme->getNom() . "<br>";
+
+$arme->setNomImage("epee.png");
+echo "Nom de l'image de l'arme : " . $arme->getNomImage() . "<br>";
+
+$arme->setDescription("Une épée tranchante");
+echo "Description de l'arme : " . $arme->getDescription() . "<br>";
+
+?>

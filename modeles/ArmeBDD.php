@@ -22,5 +22,20 @@ function donneArmeByIdV1($id) {
     
 }
 
+function ajouteArme(Arme $arme) {
+    
+        $query = "INSERT INTO armes (id, nom, nomImage, description) VALUES (:id, :nom, :nomImage, :description)";
+
+        $stmt = $this->db->prepare($query);
+
+        $stmt->bindParam(':id', $arme->getId());
+        $stmt->bindParam(':nom', $arme->getNom());
+        $stmt->bindParam(':nomImage', $arme->getNomImage());
+        $stmt->bindParam(':description', $arme->getDescription());
+
+        $result = $stmt->execute();
+
+        return $result;
+}
 
 ?>
