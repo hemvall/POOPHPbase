@@ -3,7 +3,7 @@ require_once '../mesClasses/Arme.php';
 require_once '../modeles/ArmeBDDg.php';
 
 $arme = new Arme();
-// aa
+// bb
 $arme->setNom("Épée");
 echo "Nom de l'arme : " . $arme->getNom() . "<br>";
 
